@@ -1,0 +1,225 @@
+/* --- Pemboleh Ubah Warna --- */
+:root {
+    --primary: #667eea;
+    --secondary: #764ba2;
+    --text-dark: #2d3748;
+    --text-light: #718096;
+    --bg-color: #f4f7f6;
+    --white: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth; /* Kesan tatalan lancar bila klik menu */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    line-height: 1.7;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 4rem 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+/* --- Navigasi --- */
+nav {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none; /* Arahan: Navbar ialah unordered list[cite: 1] */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Arahan: Link states dan text-decoration[cite: 1] */
+nav ul li a:link, 
+nav ul li a:visited {
+    color: var(--text-dark);
+    text-decoration: none; /* Buang garis bawah asal[cite: 1] */
+    padding: 20px 30px;
+    display: block;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Kesan garis bawah animasi yang lebih moden */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: var(--primary);
+    background-color: #f8fafc;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:active {
+    color: var(--secondary);
+    transform: scale(0.95); /* Kesan butang ditekan */
+}
+
+/* --- Susun Atur Utama --- */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Jarak antara seksyen */
+}
+
+/* Arahan: Menggunakan section, article dsb.[cite: 1] */
+section {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+h2 {
+    color: var(--secondary);
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 15px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* --- Media / Video --- */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* Arahan: Video berserta kapsyen dan padan dengan saiz reka bentuk[cite: 1] */
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    display: block;
+}
+
+/* --- Arahan: Borang (Form) yang dihias CSS[cite: 1] --- */
+form {
+    display: grid;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+
+input[type="text"], 
+input[type="email"] {
+    padding: 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #f8fafc;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+    background-color: var(--white);
+}
+
+input[type="submit"] {
+    padding: 15px 25px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(118, 75, 162, 0.3);
+}
+
+input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--text-dark);
+    color: var(--text-light);
+    text-align: center;
+    padding: 2.5rem;
+    margin-top: 60px;
+}
+
+/* --- Responsive Web Design --- */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    nav ul li a::after {
+        display: none; /* Buang animasi pada mod mudah alih */
+    }
+    
+    nav ul li a {
+        text-align: center;
+        border-bottom: 1px solid #edf2f7;
+    }
+    
+    section {
+        padding: 25px;
+    }
+}

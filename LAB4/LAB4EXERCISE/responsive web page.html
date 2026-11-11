@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.9 Lab Exercise 4</title>
+    
+    <!-- Google Fonts untuk tipografi moden -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Internal CSS -->
+    <style>
+        article {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #764ba2;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        article:hover {
+            transform: translateY(-5px);
+        }
+        
+        figcaption {
+            font-family: 'Poppins', sans-serif;
+            font-style: italic;
+            font-size: 0.9rem;
+            text-align: center;
+            color: #6c757d;
+            margin-top: 15px;
+            padding: 10px;
+            background: #f1f3f5;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Modern Responsive Web</h1>
+    </header>
+
+    <!-- Navigation bar (Unordered list) -->
+    <nav>
+        <ul>
+            <li><a href="#video-section">Media</a></li>
+            <li><a href="#article-section">Article</a></li>
+            <li><a href="#form-section">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Media Section -->
+        <section id="video-section">
+            <h2>Media Section</h2>
+            <figure>
+                <!-- Tambah atribut poster jika mahu gambar awal sebelum video dimainkan -->
+                <video width="100%" controls>
+                    <source src="sample.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Video 1: Pengenalan kepada HTML5 & CSS Moden</figcaption>
+            </figure>
+        </section>
+
+        <!-- Article Section -->
+        <section id="article-section">
+            <h2>Content Section</h2>
+            <article>
+                <h3>Membina Laman Web Responsif</h3>
+                <p>Ini adalah contoh penggunaan tag artikel di dalam sebuah seksyen. Susun atur kini menggunakan jarak yang lebih selesa, warna yang menarik, dan elemen interaktif yang menaikkan seri laman web tanpa merumitkan kod HTML5.</p>
+            </article>
+        </section>
+
+        <!-- Form Section -->
+        <section id="form-section">
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Masukkan nama anda" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="contoh@domain.com" required>
+                </div>
+                
+                <input type="submit" value="Hantar Borang">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Akmal Arsyad (S78569) - Fakulti Komputeran, Universiti Malaysia Terengganu</p>
+    </footer>
+
+</body>
+</html>
