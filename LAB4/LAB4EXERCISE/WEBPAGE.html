@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akmal's Personal Website - Lab 4</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="lab4.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .welcome-message {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-left: 5px solid #0077b6;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .welcome-message h2 {
+            color: #023e8a;
+        }
+
+        .highlight {
+            color: #0077b6;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="home">
+        <h1>Welcome to Akmal's Personal Website</h1>
+        <p>Computer Science Student | Technology Enthusiast</p>
+    </header>
+
+    <!-- NAVIGATION BAR USING UNORDERED LIST -->
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- SECTION 1: HOME -->
+        <section class="welcome-message">
+            <h2>Hello, I'm Akmal!</h2>
+
+            <p>
+                Welcome to my responsive personal webpage.
+                This website was created using
+                <span class="highlight">HTML5 and CSS</span>
+                as part of my Web-Based Interface Design
+                Lab Exercise 4.
+            </p>
+        </section>
+
+        <!-- SECTION 2: ABOUT ME -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <article>
+                <h3>My Background</h3>
+
+                <p>
+                    My name is
+                    <strong>Muhammad Akmal Arsyad bin Basri</strong>.
+                    I am a Computer Science student at
+                    Universiti Malaysia Terengganu (UMT).
+                </p>
+
+                <p>
+                    I am currently pursuing a
+                    <em>Bachelor of Computer Science
+                    (Mobile Computing) with Honours</em>.
+                    I enjoy learning about programming,
+                    software development, and technology.
+                </p>
+
+                <p>
+                    My ambition is to become a successful
+                    software developer and contribute to
+                    technological innovation.
+                </p>
+            </article>
+        </section>
+
+        <!-- SECTION 3: HOBBIES -->
+        <section id="hobbies">
+            <h2>My Favourite Hobbies</h2>
+
+            <article>
+                <h3>Activities I Enjoy</h3>
+
+                <p>
+                    During my free time, I enjoy several
+                    activities that help me relax and
+                    develop new skills.
+                </p>
+
+                <div class="hobby-container">
+
+                    <div class="hobby-card">
+                        <h3>Gaming</h3>
+                        <p>
+                            I enjoy playing video games
+                            that involve strategy,
+                            teamwork, and challenges.
+                        </p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <h3>Programming</h3>
+                        <p>
+                            I enjoy learning programming
+                            languages and developing
+                            websites and applications.
+                        </p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <h3>Aviation</h3>
+                        <p>
+                            I am interested in fighter jets,
+                            aircraft technology, and
+                            modern aviation systems.
+                        </p>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+
+        <!-- SECTION 4: VIDEO -->
+        <section id="video">
+            <h2>My Favourite Technology Video</h2>
+
+            <article>
+                <h3>Exploring Technology</h3>
+
+                <p>
+                    I enjoy watching educational videos
+                    related to technology and programming.
+                    The following video demonstrates
+                    HTML5 video integration.
+                </p>
+
+                <figure>
+                    <video controls preload="metadata" width="600">
+
+                        <source
+                            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+                            type="video/webm">
+
+                        Your browser does not support
+                        the HTML5 video element.
+                    </video>
+
+                    <figcaption>
+                        Figure 1: Sample HTML5 video
+                        demonstrating multimedia integration
+                        in a responsive webpage.
+                    </figcaption>
+                </figure>
+
+            </article>
+        </section>
+
+        <!-- SECTION 5: CONTACT FORM -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <p>
+                Feel free to fill in the form below
+                to share your information and interests.
+            </p>
+
+            <form action="#" method="get">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <!-- NAME -->
+                    <label for="name">Full Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required>
+
+                    <!-- EMAIL -->
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+
+                    <!-- GENDER -->
+                    <p>Gender:</p>
+
+                    <div class="form-options">
+                        <label>
+                            <input type="radio"
+                                   name="gender"
+                                   value="male"
+                                   required>
+                            Male
+                        </label>
+
+                        <label>
+                            <input type="radio"
+                                   name="gender"
+                                   value="female">
+                            Female
+                        </label>
+                    </div>
+
+                    <!-- HOBBIES -->
+                    <p>Favourite Hobbies:</p>
+
+                    <div class="form-options">
+                        <label>
+                            <input type="checkbox"
+                                   name="hobbies"
+                                   value="gaming">
+                            Gaming
+                        </label>
+
+                        <label>
+                            <input type="checkbox"
+                                   name="hobbies"
+                                   value="programming">
+                            Programming
+                        </label>
+
+                        <label>
+                            <input type="checkbox"
+                                   name="hobbies"
+                                   value="sports">
+                            Sports
+                        </label>
+
+                        <label>
+                            <input type="checkbox"
+                                   name="hobbies"
+                                   value="aviation">
+                            Aviation
+                        </label>
+                    </div>
+
+                    <!-- MESSAGE -->
+                    <label for="message">Your Message:</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message here..."
+                        required></textarea>
+
+                    <!-- BUTTONS -->
+                    <div class="form-buttons">
+                        <button type="submit">
+                            Submit
+                        </button>
+
+                        <button type="reset"
+                                class="reset-button">
+                            Reset
+                        </button>
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; 2026 Muhammad Akmal Arsyad bin Basri.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            CSF3133 - Web-Based Interface Design
+            | Lab Exercise 4
+        </p>
+
+        <a href="#home">Back to Top</a>
+    </footer>
+
+</body>
+</html>
