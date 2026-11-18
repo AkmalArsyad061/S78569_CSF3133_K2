@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akmal's Personal Profile</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>My Personal Profile</h1>
+        <p>Welcome to my personal profile webpage!</p>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a href="#about">About Me</a> |
+        <a href="#information">Personal Information</a> |
+        <a href="#hobbies">My Hobbies</a> |
+        <a href="#form">Profile Form</a>
+    </nav>
+
+    <hr>
+
+    <main>
+
+        <!-- SECTION 1: ABOUT ME -->
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <article>
+                <h3>Introduction</h3>
+
+                <p>
+                    Hello! My name is
+                    <strong>Muhammad Akmal Arsyad bin Basri</strong>.
+                    I am 20 years old and currently studying
+                    at Universiti Malaysia Terengganu (UMT).
+                </p>
+
+                <p>
+                    I am pursuing a
+                    <em>Bachelor of Computer Science
+                    (Mobile Computing) with Honours</em>.
+                    I enjoy learning about programming,
+                    technology, and software development.
+                </p>
+            </article>
+
+        </section>
+
+        <hr>
+
+        <!-- SECTION 2: PERSONAL INFORMATION TABLE -->
+        <section id="information">
+
+            <h2>My Personal Information</h2>
+
+            <p>
+                The following table shows
+                my personal information.
+            </p>
+
+            <table border="1" cellpadding="10" cellspacing="0">
+
+                <caption>
+                    <strong>Personal Profile Details</strong>
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Information</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Full Name</td>
+                        <td>Muhammad Akmal Arsyad bin Basri</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Nickname</td>
+                        <td>Akmal</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Age</td>
+                        <td>20 Years Old</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Date of Birth</td>
+                        <td>29 November 2006</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Occupation</td>
+                        <td>University Student</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>University</td>
+                        <td>Universiti Malaysia Terengganu</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>Course</td>
+                        <td>Computer Science (Mobile Computing)</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>Year of Study</td>
+                        <td>Year 2</td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td>Hometown</td>
+                        <td>Kedah, Malaysia</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+        <!-- SECTION 3: MY HOBBIES -->
+        <section id="hobbies">
+
+            <h2>My Favourite Hobbies</h2>
+
+            <article>
+                <h3>Activities I Enjoy</h3>
+
+                <p>
+                    During my free time, I enjoy
+                    playing video games, exploring
+                    technology, and learning about aviation.
+                </p>
+
+                <ul>
+                    <li>Playing video games</li>
+                    <li>Programming and coding</li>
+                    <li>Learning about military aircraft</li>
+                    <li>Watching movies</li>
+                    <li>Exploring new technology</li>
+                </ul>
+
+                <p>
+                    One of my favourite websites is
+                    <a href="https://www.youtube.com/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        YouTube
+                    </a>.
+                </p>
+            </article>
+
+        </section>
+
+        <hr>
+
+        <!-- SECTION 4: PERSONAL PROFILE FORM -->
+        <section id="form">
+
+            <h2>Personal Profile Form</h2>
+
+            <p>
+                Please complete the following form
+                to share your personal information
+                and favourite hobbies.
+            </p>
+
+            <form action="#" method="get">
+
+                <!-- NAME INPUT -->
+                <fieldset>
+                    <legend>Personal Details</legend>
+
+                    <label for="name">Full Name:</label>
+                    <br>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required>
+
+                    <br><br>
+
+                    <!-- EMAIL INPUT -->
+                    <label for="email">Email Address:</label>
+                    <br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+
+                    <br><br>
+
+                    <!-- GENDER RADIO BUTTONS -->
+                    <p>Gender:</p>
+
+                    <input
+                        type="radio"
+                        id="male"
+                        name="gender"
+                        value="male"
+                        required>
+                    <label for="male">Male</label>
+
+                    <br>
+
+                    <input
+                        type="radio"
+                        id="female"
+                        name="gender"
+                        value="female">
+                    <label for="female">Female</label>
+
+                </fieldset>
+
+                <br>
+
+                <!-- HOBBIES CHECKBOXES -->
+                <fieldset>
+                    <legend>Favourite Hobbies</legend>
+
+                    <p>
+                        Select your favourite hobbies
+                        (you may choose more than one):
+                    </p>
+
+                    <input
+                        type="checkbox"
+                        id="gaming"
+                        name="hobbies"
+                        value="gaming">
+                    <label for="gaming">Gaming</label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="programming"
+                        name="hobbies"
+                        value="programming">
+                    <label for="programming">Programming</label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="sports"
+                        name="hobbies"
+                        value="sports">
+                    <label for="sports">Sports</label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="reading"
+                        name="hobbies"
+                        value="reading">
+                    <label for="reading">Reading</label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="movies"
+                        name="hobbies"
+                        value="movies">
+                    <label for="movies">Watching Movies</label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="aviation"
+                        name="hobbies"
+                        value="aviation">
+                    <label for="aviation">Aviation</label>
+
+                </fieldset>
+
+                <br>
+
+                <!-- SUBMIT AND RESET BUTTONS -->
+                <button type="submit">Submit Form</button>
+
+                <button type="reset">Reset Form</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            &copy; 2026 Muhammad Akmal Arsyad bin Basri.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            CSF3133 - Web-Based Interface Design
+            <br>
+            Lab Exercise 2: Personal Profile Page
+        </p>
+
+        <p>
+            <a href="#about">Back to Top</a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
